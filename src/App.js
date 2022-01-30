@@ -20,10 +20,8 @@ const App = () => {
 
     const renderItems = data?.map(item => {
         return (
-            <Grid item xs={12} sm={6} md={4} lg={3}>
-                <Item key={item.id}
-                      item={item}
-                />
+            <Grid key={item.id} item xs={12} sm={6} md={4} lg={3}>
+                <Item item={item}/>
             </Grid>
         )
     });
